@@ -1,6 +1,6 @@
-# Unravelling
+# Unravelling :iphone: :yarn:
 
-Explore the relationship between textile and WebAR
+Explore the relationship between textile technologies and WebAR
 
 ## About
 
