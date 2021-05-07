@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unravelling</title>
+    <script src="./resources/js/aframe.min.js"></script>
+    <script src="./resources/js/aframe-ar.js"></script>
+</head>
+
+<body>
+    <a-scene embedded arjs='
+    debugUIEnabled: false;
+    sourceType: webcam;
+    patternRatio: 0.90;
+    trackingMethod: best;'
+    vr-mode-ui='
+    enabled: false;' 
+    renderer='
+    logarithmicDepthBuffer: true;
+    physicallyCorrectLights: true;'>
+        <a-marker id="marker1" type="pattern" url="resources/pattern-pixil-frame-0.patt">
+            <a-box position='0 0 0' material='color: blue;'></a-box>
+        </a-marker>
+        <a-entity camera> </a-entity>
+    </a-scene>
+</body>
+
+</html>
