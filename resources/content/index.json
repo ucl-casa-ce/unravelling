@@ -1,54 +1,47 @@
 {
     "info": {
-      "version": "1.0",
+      "version": "0.5",
       "title": "unravelling",
-      "markers":9
+      "markers":6
     },
     "content": [
       {
         "markerName": "patt_marker_1",
-        "contentName": "content_1",
-        "titleContent": ""
+        "contentName": "Text.glb",
+        "type":"model",
+        "titleContent": " The Content 1"
       },
       {
         "markerName": "patt_marker_2",
-        "contentName": "content_2",
+        "contentName": "sound1.mp3",
+        "type":"sound",
         "titleContent": "The Content 2"
       },
       {
         "markerName": "patt_marker_3",
-        "contentName": "content_3",
+        "contentName": "content_3.jpg",
+        "type":"image",
         "titleContent": "The Content 3"
       },
       {
         "markerName": "patt_marker_4",
-        "contentName": "content_4",
+        "contentName": "content_4.jpg",
+        "type":"image",
         "titleContent": "The Content 4"
       },
       {
         "markerName": "patt_marker_5",
-        "contentName": "content_5",
+        "contentName": "content_5.jpg",
+        "type":"image",
         "titleContent": "The Content 5"
       },
       {
         "markerName": "patt_marker_6",
-        "contentName": "content_6",
+        "contentName": "content_6.jpg",
+        "type":"image",
         "titleContent": "The Content 6"
-      },
-      {
-        "markerName": "patt_marker_7",
-        "contentName": "content_7",
-        "titleContent": "The Content 7"
-      },
-      {
-        "markerName": "patt_marker_8",
-        "titleContent": ""
-      },
-      {
-        "markerName": "patt_marker_9",
-        
-        "titleContent": "The Content 9"
       }
+      
     ]
     
   }

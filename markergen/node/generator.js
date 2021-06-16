@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-//Marker Creator From https://github.com/AR-js-org/AR.js/tree/master/three.js/examples/marker-training
+//Command line Pattern file generator, based on https://github.com/AR-js-org/AR.js/tree/master/three.js/examples/marker-training
 const fs = require('fs'), path = require('path'), Canvas = require('canvas');
 
 //Variables
@@ -14,10 +14,10 @@ const args= process.argv.slice(2)
 const imgFolder = ( args[0] || 'img')
 
 
-//Three functions are 
-//encodeImageURL: load the image
-//encodeImage: encode the pattern
-//triggerDownload: write the file
+//3 functions are used: 
+//encodeImageURL: to load the image (png or jpg)
+//encodeImage: encode the pattern (matrix 16 by 16 RGB 4 rotations)
+//triggerDownload: write the file (patt)
 
 THREEx.ArPatternFile.encodeImageURL = function (imageURL, onComplete) {
     var image = new Canvas.Image;

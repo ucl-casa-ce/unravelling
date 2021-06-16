@@ -9,51 +9,40 @@
     <!--AFrame version 1.2.0-->
     <script src="./resources/js/aframe.min.js"></script>
     <!--AR.js version 3.3.3-->
-    <script src="./resources/js/aframe-ar.js"></script> 
+    <script src="./resources/js/aframe-ar.js"></script>
 
+    <!--Howler Sound plugin-->
+    <script src="./resources/js/howler.min.js"></script>
+
+    <!--Custom script to create the marker and load the content-->
     <script src="./resources/js/markerManager.js"></script>
 </head>
 
 <body>
 
-    <a-scene 
-    embedded arjs='
+    <a-scene embedded arjs='
         debugUIEnabled: false; 
         sourceType: webcam; 
-        patternRatio: 0.80; 
+        patternRatio: 0.64; 
         trackingMethod: best;
-        sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'
-    color-space="sRGB"
-    vr-mode-ui="enabled: false"
-    renderer="colorManagement: true;  physicallyCorrectLights: true;"
-    markers_start_json 
-    >
-    	
-        <a-entity id='userCamera' camera>
-		
-            <a-cursor> </a-cursor>
-    	</a-entity>
-	</a-scene>
+       
+        sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;' 
+        
+        color-space="sRGB"
+        vr-mode-ui="enabled: false" renderer="colorManagement: true;  physicallyCorrectLights: false;"
+        markers_start_json>
+
+        <a-entity id='userCamera' camera listener-howler>
+
+
+        </a-entity>
+    </a-scene>
 
 
     <!--
-    <a-scene embedded arjs='
-    debugUIEnabled: false;
-    sourceType: webcam;
-    patternRatio: 0.80;
-    trackingMethod: best;'
-    color-space="sRGB"
-    vr-mode-ui='
-    enabled: false;' 
-    renderer='
-    logarithmicDepthBuffer: true;
-    colorManagement: true;
-    physicallyCorrectLights: true;'>
-        <a-marker id="marker1" type="pattern" url="resources/patt/patt_marker_3.patt">
+        <a-marker id="marker1" type="pattern" url="resources/patt/patt_marker_1.patt">
             <a-box position='0 0 0' scale="0.5 0.5 0.5" material='color: blue;'></a-box>
         </a-marker>
-        <a-entity camera> </a-entity>
-    </a-scene>
     -->
 </body>
 
