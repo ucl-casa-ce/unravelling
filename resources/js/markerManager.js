@@ -64,8 +64,9 @@ AFRAME.registerComponent('markers_start_json', {
 
                     textEl.setAttribute('id', 'text' + i);
                     textEl.setAttribute('text', { color: 'red', align: 'center', value: titleContent, width: '4.5' });
-                    textEl.object3D.position.set(0, 0.7, 0);
-                    textEl.object3D.rotation.set(-90, 0, 0);
+                    textEl.object3D.position.set(0, 0.7, -0.5);
+                    textEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
+                    //textEl.object3D.rotation.set(-90, 0, 0);
 
                     markerEl.appendChild(textEl); //add the text to the marker
 
@@ -79,8 +80,9 @@ AFRAME.registerComponent('markers_start_json', {
                             var imgEl = document.createElement('a-image');
                             imgEl.setAttribute('src', mediaURL);
                             imgEl.setAttribute('id', 'img' + i);
-                            imgEl.object3D.position.set(0, 0.7, 0);
-                            imgEl.object3D.rotation.set(-90, 0, 0);
+                            imgEl.object3D.position.set(0, 0.3, 0);
+                            imgEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
+                            //imgEl.object3D.rotation.set(-90, 0, 0);
                             markerEl.appendChild(imgEl); //add the image to the marker
                             }
                             if(el.type == 'model'){
