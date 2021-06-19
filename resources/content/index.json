@@ -2,44 +2,56 @@
     "info": {
       "version": "0.5",
       "title": "unravelling",
-      "markers":6
+      "markers":8
     },
     "content": [
       {
         "markerName": "patt_marker_1",
-        "contentName": "Text.glb",
-        "type":"model",
-        "titleContent": " The Content 1"
+        "contentName": "content_1.jpg",
+        "type":"image",
+        "titleContent": ""
       },
       {
         "markerName": "patt_marker_2",
-        "contentName": "sound1.mp3",
-        "type":"sound",
-        "titleContent": "The Content 2"
+        "contentName": "content_2.jpg",
+        "type":"image",
+        "titleContent": ""
       },
       {
         "markerName": "patt_marker_3",
-        "contentName": "Unravelling_picture_Eva_comp.jpg",
+        "contentName": "content_2.jpg",
         "type":"image",
-        "titleContent": "Unravelling"
+        "titleContent": ""
       },
       {
         "markerName": "patt_marker_4",
         "contentName": "content_4.jpg",
         "type":"image",
-        "titleContent": "The Content 4"
+        "titleContent": ""
       },
       {
         "markerName": "patt_marker_5",
-        "contentName": "content_5.jpg",
+        "contentName": "content_4.jpg",
         "type":"image",
-        "titleContent": "The Content 5"
+        "titleContent": ""
       },
       {
         "markerName": "patt_marker_6",
         "contentName": "content_6.jpg",
         "type":"image",
-        "titleContent": "The Content 6"
+        "titleContent": ""
+      },
+      {
+        "markerName": "patt_marker_7",
+        "contentName": "content_7.jpg",
+        "type":"image",
+        "titleContent": ""
+      },
+      {
+        "markerName": "patt_marker_8",
+        "contentName": "content_7.jpg",
+        "type":"image",
+        "titleContent": ""
       }
       
     ]
