@@ -63,8 +63,8 @@ AFRAME.registerComponent('markers_start_json', {
                     var textEl = document.createElement('a-entity');
 
                     textEl.setAttribute('id', 'text' + i);
-                    textEl.setAttribute('text', { color: 'red', align: 'center', value: titleContent, width: '4.5' });
-                    textEl.object3D.position.set(0, 0.7, -0.5);
+                    textEl.setAttribute('text', { color: 'blue', align: 'center', value: titleContent, width: '2.5' });
+                    textEl.object3D.position.set(0, 0.7, 0.5);
                     textEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
                     //textEl.object3D.rotation.set(-90, 0, 0);
 
