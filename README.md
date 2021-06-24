@@ -28,11 +28,15 @@ most critical part, and based on a trial and error approach. The good result (ma
 - As the image will be converted in a 16 by 16 pixels matrix, high resolution cameras do not provide any practical advantage.
 - The size of the image need to be as close as possible to the final marker, in our case we used a cut-out with the black frame to help crop the image to the right size.
 
-This is the setup we used during the event ![camera setup](./imgs/camera_setup.jpg).
+This is the setup we used during the event
+
+![camera setup](./imgs/camera_setup.jpg).
+
 The webcam, perpendicular to the woven object, looks through the ring light. The camera in _AR.Js_ needs a frame around the image to be recognised. In this project we used a cut-out 9 by 9 cm with border 1.7cm thick (internal area available for the image 5.8 by 5.8). PatternRatio to set in the _index.html_ is 0.64. 
 Using the default Windows Camera App, the image is acquired and cropped within the black frame, by keeping a 1:1 square ratio.
 
 The images to use should look similar to these ones:
+
 ![image uncropped](./imgs/img_uncropped.jpg)
 ![image cropped](./imgs/img_cropped.jpg)
 
