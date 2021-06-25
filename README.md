@@ -53,6 +53,7 @@ The folder _./markergen_ contains the scripts to create the pattern _.patt_ used
 - the patterns will be created and saved in the folder _./markergen/patt_
 
 ![resolution of the marker](./imgs/P_17_px.jpg)
+
 The image converted as 16 by 16 pixels matrix
 
 ## Setup the AR Experience
