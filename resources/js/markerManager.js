@@ -112,7 +112,7 @@ AFRAME.registerComponent('markers_start_json', {
     }
 });
 
-//Old component, now with JSON
+//Old component, loop through the marker/content folder. Now with JSON, easier to setup
 AFRAME.registerComponent('markers_start', {
     init: function () {
         console.log('Add markers to the scene');

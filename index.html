@@ -8,10 +8,9 @@
     <title>Unravelling</title>
     <!--AFrame version 1.2.0-->
     <script src="./resources/js/aframe.min.js"></script>
-    
-    <!--AR.js version 3.3.3-->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/3.1.0/aframe/build/aframe-ar.js"></script>
-    <!--<script src="./resources/js/aframe-ar.js"></script>-->
+
+    <!--AR.js version 3.1.0-->
+    <script src="./resources/js/aframe-ar.js"></script>
 
     <!--Howler Sound plugin-->
     <script src="./resources/js/howler.min.js"></script>
@@ -26,26 +25,20 @@
         debugUIEnabled: false; 
         sourceType: webcam; 
         patternRatio: 0.64; 
-        trackingMethod: best;
-       
-        ' 
-        
-        color-space="sRGB"
-        vr-mode-ui="enabled: false" renderer="colorManagement: true;  physicallyCorrectLights: false;"
-        markers_start_json>
+        trackingMethod: best;' color-space="sRGB" vr-mode-ui="enabled: false"
+        renderer="colorManagement: true;  physicallyCorrectLights: false;" markers_start_json>
 
         <a-entity id='userCamera' camera listener-howler>
-
-
         </a-entity>
-    </a-scene>
 
-
-    <!--
+        <!--
         <a-marker id="marker1" type="pattern" url="resources/patt/patt_marker_1.patt">
             <a-box position='0 0 0' scale="0.5 0.5 0.5" material='color: blue;'></a-box>
         </a-marker>
     -->
+    </a-scene>
+
+
 </body>
 
 </html>
