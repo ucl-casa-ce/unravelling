@@ -2,6 +2,8 @@
 
 Explore the relationship between textile technologies and WebAR
 
+![Example Marker](./docs/img/Unravelling_title.gif)
+
 ## About
 
 _Unravelling_ explores the relationship between textile technologies, as a tactile means of making and marking time in isolation, and web-based technologies, as means of communicating and experiencing intimacy without touch.
@@ -30,19 +32,17 @@ Most critical part, and based on a trial and error approach, was how to photogra
 
 This is the setup we used during the event
 
-![camera setup](./imgs/camera_setup.jpg).
+![camera setup](./docs/img/camera_setup.jpg)
 
 The webcam was directed through the ring light to the woven object, which was in turn placed inside a black, printed frame. AR.Js enables a smartphone camera to recognise an image with a frame as a marker (generally a thicker frame helps in the recognition). In this project we used a cut-out of 9 by 9 cm with a border of 1.7cm thick, leaving an area available for the woven object of 5.8 by 5.8 (PatternRatio to set in the _index.html_ is 0.64). The captured images (we used the default Windows Camera App) were precisely cropped within the black frame, maintaining a square ratio.
 
-The images to use should look similar to these ones:
-
-![image uncropped](./imgs/img_uncropped.jpg)
+![image uncropped](./docs/img/img_uncropped.jpg)
 
 The woven object view from the webcam
 
-![image cropped](./imgs/img_cropped.jpg)
+![image cropped](./docs/img/img_cropped.jpg)
 
-The image used as marker
+The image used for the AR marker
 
 ## Create the AR Markers
 
@@ -52,7 +52,7 @@ The folder _./markergen_ contains the scripts to create the pattern _.patt_ used
 - in a new `node.js` terminal, run `node generator` in the _./markergen_ folder ;
 - the patterns will be created and saved in the folder _./markergen/patt_
 
-![resolution of the marker](./imgs/P_17_px.jpg)
+![resolution of the marker](./docs/img/P_17_px.jpg)
 
 The image converted as 16 by 16 pixels matrix
 
